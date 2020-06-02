@@ -14,6 +14,9 @@
    <class>hierarquia.joined.PaiJoined</class>
    <class>hierarquia.joined.FilhoJoined</class>
    <class>hierarquia.joined.FilhaJoined</class>
+   <class>hierarquia.singleTable.PaiSingle</class>
+   <class>hierarquia.singleTable.FilhoSingle</class>
+   <class>hierarquia.singleTable.FilhaSingle</class>
 
    <!-- Propriedades do Persistence-Unit 'estudoHibernate' para se conectar no banco de dados -->
    <properties>
@@ -28,12 +31,14 @@
 	    <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 	    <property name="hibernate.show_sql" value="true" />
 	    <property name="hibernate.format_sql" value="true" />
+	    
+	     <property name="hibernate.connection.autocommit" value="true" />
 	
 	    <!-- É um "gerenciamento" entre as classes e as tabelas -->
 	    <!-- se estiver como update, toda alteração que você fizer, ele irá alterar no banco dados 
 	         um exemplo, se você criar uma nova coluna em uma classe, quando reiniciar a aplicação ele irá inserir somente aquela nova coluna -->
 	     <!-- se estiver como create, ele toda vez que iniciar a aplicação irá deletar todas as tabelas e criar do 0, perdendo os dados contidos nelas -->
-	    <property name="hibernate.hbm2ddl.auto" value="update" />
+	    <property name="hibernate.hbm2ddl.auto" value="create" />
    </properties>
    
  </persistence-unit>
