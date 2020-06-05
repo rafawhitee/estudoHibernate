@@ -14,9 +14,15 @@
    <class>hierarquia.joined.PaiJoined</class>
    <class>hierarquia.joined.FilhoJoined</class>
    <class>hierarquia.joined.FilhaJoined</class>
+   
    <class>hierarquia.singleTable.PaiSingle</class>
    <class>hierarquia.singleTable.FilhoSingle</class>
    <class>hierarquia.singleTable.FilhaSingle</class>
+   
+   <class>hierarquia.tablePerClass.PaiPerClass</class>
+   <class>hierarquia.tablePerClass.FilhoPerClass</class>
+   <class>hierarquia.tablePerClass.FilhaPerClass</class>
+
 
    <!-- Propriedades do Persistence-Unit 'estudoHibernate' para se conectar no banco de dados -->
    <properties>
