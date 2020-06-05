@@ -22,6 +22,8 @@
    <class>hierarquia.tablePerClass.PaiPerClass</class>
    <class>hierarquia.tablePerClass.FilhoPerClass</class>
    <class>hierarquia.tablePerClass.FilhaPerClass</class>
+   
+   <class>anotacoes.Anotacoes</class>
 
 
    <!-- Propriedades do Persistence-Unit 'estudoHibernate' para se conectar no banco de dados -->
